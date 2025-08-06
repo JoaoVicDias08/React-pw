@@ -1,0 +1,204 @@
+.home {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, var(--primary) 60%, var(--secondary) 100%);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+}
+
+.glass {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    background: rgba(255,255,255,0.08);
+    border-radius: 22px;
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.18);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1.5px solid rgba(255,255,255,0.18);
+    padding: 2.5rem 2rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 480px;
+    color: var(--white);
+    animation: fadeInLeft 1s;
+    text-align: center;
+}
+
+.apresentacao h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.apresentacao h2 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--soft-white);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.apresentacao p {
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: var(--soft-white);
+    margin-bottom: 1rem;
+}
+
+.destaque {
+    color: var(--red);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.btn_red {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.85rem 2.4rem;
+    font-size: 1.15rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background: var(--secondary);
+    color: var(--white);
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    letter-spacing: 0.5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.btn_red:hover {
+    background: var(--red);
+    transform: scale(1.06) translateY(-2px);
+}
+
+.btn_red svg {
+    margin-left: 0.3rem;
+    transition: transform 0.2s;
+}
+
+.btn_red:hover svg {
+    transform: translateX(4px) scale(1.15);
+}
+
+.figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeInRight 1s;
+}
+
+.img_home {
+    max-width: 550px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+    border-radius: 32px;
+    border: solid 2px ;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.like_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+
+    width: 60px;
+    height: 60px;
+}
+
+.like {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    width: 100%;
+    height: 100%;
+
+    background-color: transparent;
+}
+
+.like:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+}
+
+.like img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s;
+    width: 40px;
+    height: 40px;
+}
+
+.like_text {
+    color: var(--white);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-left: 10px;
+    
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+
+}
+
+@media (max-width: 900px) {
+    .glass {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+    .apresentacao {
+        align-items: center;
+        text-align: center;
+    }
+    .img_home {
+        max-width: 260px;
+        padding: 0.7rem;
+    }
+}
+
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-40px);}
+    to { opacity: 1; transform: translateX(0);}
+}
+
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(40px);}
+    to { opacity: 1; transform: translateX(0);}
+}

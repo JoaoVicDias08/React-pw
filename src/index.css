@@ -1,0 +1,29 @@
+:root {
+  font-family: "Poppins", sans-serif;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary: #000000;       /* Fundo preto absoluto */
+  --secondary: #0C0C0C;     /* Preto acinzentado (para contraste leve) */
+  --terceary: #00FFC6;      /* Verde-água neon (para destaques) */
+  --red: #FF3B3B;           /* Vermelho de alerta */
+  --soft-white: #D0F5E8;    /* Branco esverdeado suave */
+  --black: #000000;         /* Preto */
+  --white: #F5FFF8;         /* Branco esverdeado limpo */
+  --gray: #1A1A1A;          /* Cinza escuro */
+  --title: #00FF00;         /* Verde puro para títulos */
+  --border: #00A77E;        /* Verde escuro suave (borda/divisores) */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
